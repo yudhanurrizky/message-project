@@ -24,4 +24,4 @@
 
   * Inspiratinal Facts
 
-  * Motivatiopnal Prompt 
+  * Motivational Prompt 
