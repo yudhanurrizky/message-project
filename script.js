@@ -35,6 +35,7 @@ function printMessage () {
         
         for(let msg of printedMessage){
             console.log(msg);
+            console.log('');
         }
 };
 
