@@ -18,11 +18,24 @@ const collectiveMessages = {
     motivationalPrompt: ['Get going!', 'Begin the journey!', 'Conquer the world!', 'Change the world!', 'Start the process!']
 };
 
-const randomMessages = []
+let selectedMessage = []
 
-randomMessages.push(collectiveMessages.wiseQuotes[generateRandomNumber(collectiveMessages.wiseQuotes.length)])
-randomMessages.push(collectiveMessages.inspirationalFacts[generateRandomNumber(collectiveMessages.inspirationalFacts.length)])
-randomMessages.push(collectiveMessages.motivationalPrompt[generateRandomNumber(collectiveMessages.motivationalPrompt.length)])
+function generateMessage () {
+    selectedMessage.push(collectiveMessages.wiseQuotes[generateRandomNumber(collectiveMessages.wiseQuotes.length)])
+    selectedMessage.push(collectiveMessages.inspirationalFacts[generateRandomNumber(collectiveMessages.inspirationalFacts.length)])
+    selectedMessage.push(collectiveMessages.motivationalPrompt[generateRandomNumber(collectiveMessages.motivationalPrompt.length)])
+};
 
+function printMessage () {
+    generateMessage();
+        let printedMessage = [];
+            printedMessage.push(`Wise words to start the day: ${selectedMessage[0]}`);
+            printedMessage.push(`Facts to remember: ${selectedMessage[1]}`);
+            printedMessage.push(`${selectedMessage[2]}`)
+        
+        for(let msg of printedMessage){
+            console.log(msg);
+        }
+};
 
-console.log(randomMessages)
+printMessage()
