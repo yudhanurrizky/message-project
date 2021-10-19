@@ -17,3 +17,12 @@ const collectiveMessages = {
                         'If the entire history of the universe’s existence was condensed into one year, your life would be just 0.16 cosmic seconds.',],
     motivationalPrompt: ['Get going!', 'Begin the journey!', 'Conquer the world!', 'Change the world!', 'Start the process!']
 };
+
+const randomMessages = []
+
+randomMessages.push(collectiveMessages.wiseQuotes[generateRandomNumber(collectiveMessages.wiseQuotes.length)])
+randomMessages.push(collectiveMessages.inspirationalFacts[generateRandomNumber(collectiveMessages.inspirationalFacts.length)])
+randomMessages.push(collectiveMessages.motivationalPrompt[generateRandomNumber(collectiveMessages.motivationalPrompt.length)])
+
+
+console.log(randomMessages)
