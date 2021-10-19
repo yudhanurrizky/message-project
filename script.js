@@ -31,7 +31,7 @@ function printMessage () {
         let printedMessage = [];
             printedMessage.push(`Wise words to start the day: ${selectedMessage[0]}`);
             printedMessage.push(`Facts to remember: ${selectedMessage[1]}`);
-            printedMessage.push(`${selectedMessage[2]}`)
+            printedMessage.push(`Words to go on: ${selectedMessage[2]}`)
         
         for(let msg of printedMessage){
             console.log(msg);
